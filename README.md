@@ -1,43 +1,94 @@
-# 🤖 PDF RAG Chatbot with Google Gemini & Chroma
+# 🤖 RAG Chatbot with Google Gemini API
 
-[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)  
-[![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red.svg)](https://streamlit.io/)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-[![Google Gemini API](https://img.shields.io/badge/Google-Gemini%20API-green.svg)](https://ai.google.dev/gemini-api)  
-[![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-purple.svg)](https://www.trychroma.com/)
-
-A **Retrieval-Augmented Generation (RAG) Chatbot** built with **Streamlit** and powered by **Google Gemini API**.  
-This chatbot allows you to **upload multiple PDFs** and have **intelligent conversations** with your documents using **persistent vector storage**.
+This project is a **Retrieval-Augmented Generation (RAG) chatbot** built with **Streamlit** and powered by **Google Gemini API**.
+It allows users to query documents or datasets and receive AI-powered responses with context-aware retrieval.
 
 ---
 
-## ✨ Features
+## 📌 Features
 
-- 📄 **Multi-PDF Upload** – Process multiple PDF documents simultaneously
-- 🧠 **Smart Document Chunking** – Intelligent text splitting for optimal retrieval
-- 🤖 **AI-Powered Responses** – Powered by **Google Gemini 2.5 Flash**
-- 💾 **Persistent Storage** – Documents persist between sessions with **ChromaDB**
-- 🔍 **Semantic Search** – Advanced vector similarity search for relevant context
-- 📊 **Source Citations** – See exactly which document sections were used
-- 🗂️ **Database Management** – Build, clear, and manage your document database
-- ⚡ **Real-time Chat** – Interactive chat interface with message history
-- 🎨 **Clean UI** – Modern Streamlit interface with progress indicators
+* 🔍 Document / Dataset retrieval with RAG
+* 🤖 AI-powered responses using Google Gemini API
+* 🎨 Interactive UI with **Streamlit**
+* ☁️ Deployable on Hugging Face Spaces or locally
 
 ---
 
-## 🚀 Quick Start
+## ⚡ Installation
 
-### 1️⃣ Clone the Repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/PDF-RAG-Chatbot-Chroma.git
-cd PDF-RAG-Chatbot-Chroma
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 ```
 
-### 2️⃣ Install Dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️
+---
+
+## 🔑 Setup API Key
+
+Export your **Google Gemini API Key**:
+
+### On Linux / macOS
+
+```bash
+export GEMINI_API_KEY=your_api_key_here
+```
+
+### On Windows (CMD)
+
+```bash
+set GEMINI_API_KEY=your_api_key_here
+```
+
+### On Windows (PowerShell)
+
+```bash
+$env:GEMINI_API_KEY="your_api_key_here"
+```
+
+---
+
+## 🚀 Run the App
+
+```bash
+streamlit run app.py
+```
+
+By default, the app runs at:
+👉 [http://localhost:8501](http://localhost:8501)
+
+---
+
+## 📂 Project Structure
+
+```
+├── app.py                # Main Streamlit app
+├── requirements.txt      # Dependencies
+└── README.md             # Project documentation
+```
+
+---
+
+## 🛠️ Requirements
+
+* Python 3.9+
+* Streamlit
+* Google Gemini API access
+* FAISS
+
+---
+
+## ✨ Example Usage
+
+Upload your documents, type a query, and let the chatbot fetch context and generate responses using Gemini.
+
+---
+
+
